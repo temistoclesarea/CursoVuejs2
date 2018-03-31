@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>vue2</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Campeonato Brasileiro - Série A</h1>
+      <ul>
+        <li v-for="(time, index) in times">
+          {{ index + 1 }} - {{ time.nome }}<img :src="time.escudo">
+        </li>
+      </ul>
+      <ul>
+        <li v-for="x in 10">{{ x }}</li>
+      </ul>
+      <ul>
+        <li v-for="(valor, chave, index) in alfabeto">
+          {{ index }} - {{ chave }}:{{ valor }}
+        </li>
+      </ul>
+    </div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
